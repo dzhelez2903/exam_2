@@ -13,14 +13,40 @@
 }
 
 @font-face {
-  font-family: "gotham Medium";
+  font-family: "Gotham Medium";
   src: url(../fonts/gothamMedium.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/open-sans-v18-latin-regular.woff);
   font-weight: normal;
   font-style: normal;
 }
 
 html {
   font-size: 10px;
+}
+
+.btn {
+  max-width: 195px;
+  font-family: "Gotham Book";
+  font-size: 14px;
+  color: #2c4058;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #2c4058;
+  padding: 20px 40px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  color: #55b7ff;
+  border: 1px solid #55b7ff;
 }
 
 /*header styls*/
@@ -113,5 +139,170 @@ html {
   text-transform: uppercase;
   letter-spacing: 5px;
   margin: 15px 0 230px;
+}
+
+/*first_sectoin style*/
+.first_sectoin {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding-bottom: 140px;
+}
+
+.first_sectoin h2 {
+  font-family: "Gotham Bold";
+  font-size: 44px;
+  color: #2c4058;
+  text-transform: uppercase;
+  margin: 140px 0 170px;
+  position: relative;
+}
+
+.first_sectoin h2::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: #2c4058;
+  left: 47%;
+  top: -80%;
+  -webkit-transform: translate(-50% -50%);
+          transform: translate(-50% -50%);
+}
+
+.first_sectoin .first_sectoin_container {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 46.15% 7.7% 46.15%;
+      grid-template-columns: 46.15% 7.7% 46.15%;
+  -ms-grid-rows: 470px 470px;
+      grid-template-rows: 470px 470px;
+  gap: 210px 0px;
+      grid-template-areas: "first-img first-img first_text" "second_text second-img second-img";
+}
+
+.first_sectoin .first-img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: first-img;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.first_sectoin .first-img img {
+  width: 100%;
+  height: auto;
+}
+
+.first_sectoin .first-img::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 92.86%;
+  height: 100%;
+  background-color: #55b7ff;
+  top: -15%;
+  left: -34.5%;
+  z-index: -1;
+}
+
+.first_sectoin .first_text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: first_text;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  padding: 60px 0 0 70px;
+}
+
+.first_sectoin .second_text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: second_text;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  padding-top: 60px;
+  padding: 60px 70px 0 0;
+}
+
+.first_sectoin .second-img {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: second-img;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.first_sectoin .second-img img {
+  width: 100%;
+  height: auto;
+}
+
+.first_sectoin .second-img::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 92.86%;
+  height: 100%;
+  background-color: #7e5aff;
+  top: -15%;
+  right: -34.5%;
+  z-index: -1;
+}
+
+.first_sectoin .first_paragraph {
+  font-family: "Gotham Book";
+  font-size: 22px;
+  color: #2c4058;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+
+.first_sectoin h3 {
+  font-family: "Gotham Book";
+  font-size: 44px;
+  color: #2c4058;
+  text-transform: uppercase;
+  margin-bottom: 44px;
+}
+
+.first_sectoin .second_paragraph {
+  font-family: "Open Sans";
+  font-size: 18px;
+  color: #4b5562;
+  margin-bottom: 40px;
+}
+
+.first_sectoin .third_paragraph {
+  font-family: "FontAwesome";
+  font-style: italic;
+  font-size: 18px;
+  margin-top: 62px;
 }
 /*# sourceMappingURL=style.css.map */
