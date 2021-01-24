@@ -199,7 +199,7 @@ html {
     flex-direction: column;
     text-align: left;
     padding: 60px 0 0 70px;
-    
+
   }
 
   .second_text {
@@ -253,7 +253,7 @@ html {
   .second_paragraph {
     font-family: "Open Sans";
     font-size: 18px;
-    color:#4b5562;
+    color: #4b5562;
     margin-bottom: 40px;
   }
 
@@ -263,5 +263,89 @@ html {
     font-size: 18px;
     color: #2c4058;
     margin-top: 62px;
+  }
+}
+
+/*second_sectoin style*/
+
+.second_sectoin {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: url(../img/bgnd/section3_bg.png) no-repeat, linear-gradient(45deg, rgb(60, 127, 212) 0%, rgb(36, 204, 250) 100%);
+  padding-bottom: 210px;
+
+  h2 {
+    font-family: "Gotham Medium";
+    font-size: 44px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin: 182px 0 100px;
+    position: relative;
+  }
+
+  h2::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: #fff;
+    left: 47%;
+    top: -80%;
+    transform: translate(-50% -50%);
+  }
+
+  .second_sectoin_container {
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .slider_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    background-color: #fff;
+    margin-right: 30px;
+    padding-bottom: 42px;
+
+    .face {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    .name {
+      font-family: "Gothem Book";
+      font-size: 18px;
+      text-transform: uppercase;
+      float: left;
+      display: flex;
+      text-align: left;
+      margin: 40px 0 0 20px;
+
+      span {
+        font-size: 14px;
+        color: #55b7ff;
+        line-height: 2.5;
+      }
+    }
+
+    h3 {
+      font-family: "Gotham Bold";
+      font-size: 22px;
+      color: #2c4058;
+      text-transform: uppercase;
+      margin: 30px 0 0 20px;
+    }
+
+    p {
+      font-family: "Open Sans";
+      font-size: 18px;
+      color: #4b5562;
+      margin: 13px 0 0 20px;
+    }
   }
 }

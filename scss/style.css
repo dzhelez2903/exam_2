@@ -306,4 +306,104 @@ html {
   color: #2c4058;
   margin-top: 62px;
 }
+
+/*second_sectoin style*/
+.second_sectoin {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background: url(../img/bgnd/section3_bg.png) no-repeat, linear-gradient(45deg, #3c7fd4 0%, #24ccfa 100%);
+  padding-bottom: 210px;
+}
+
+.second_sectoin h2 {
+  font-family: "Gotham Medium";
+  font-size: 44px;
+  color: white;
+  text-transform: uppercase;
+  margin: 182px 0 100px;
+  position: relative;
+}
+
+.second_sectoin h2::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: #fff;
+  left: 47%;
+  top: -80%;
+  -webkit-transform: translate(-50% -50%);
+          transform: translate(-50% -50%);
+}
+
+.second_sectoin .second_sectoin_container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.second_sectoin .slider_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+  background-color: #fff;
+  margin-right: 30px;
+  padding-bottom: 42px;
+}
+
+.second_sectoin .slider_card .face {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.second_sectoin .slider_card .name {
+  font-family: "Gothem Book";
+  font-size: 18px;
+  text-transform: uppercase;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  margin: 40px 0 0 20px;
+}
+
+.second_sectoin .slider_card .name span {
+  font-size: 14px;
+  color: #55b7ff;
+  line-height: 2.5;
+}
+
+.second_sectoin .slider_card h3 {
+  font-family: "Gotham Bold";
+  font-size: 22px;
+  color: #2c4058;
+  text-transform: uppercase;
+  margin: 30px 0 0 20px;
+}
+
+.second_sectoin .slider_card p {
+  font-family: "Open Sans";
+  font-size: 18px;
+  color: #4b5562;
+  margin: 13px 0 0 20px;
+}
 /*# sourceMappingURL=style.css.map */
