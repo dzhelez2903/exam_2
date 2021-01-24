@@ -1,0 +1,15 @@
+@media (min-width: 1600px) {
+
+  /*header styls*/
+  .header {
+    max-width: 1600px;
+
+    .container {
+      width: 100%;
+
+      .nav_container {
+        width: 73%;
+      }
+    }
+  }
+}

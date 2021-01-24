@@ -1,0 +1,13 @@
+@media (min-width: 1600px) {
+  /*header styls*/
+  .header {
+    max-width: 1600px;
+  }
+  .header .container {
+    width: 100%;
+  }
+  .header .container .nav_container {
+    width: 73%;
+  }
+}
+/*# sourceMappingURL=media_queries.css.map */
