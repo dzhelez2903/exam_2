@@ -319,7 +319,7 @@ html {
           flex-direction: column;
   text-align: center;
   background: url(../img/bgnd/section3_bg.png) no-repeat, linear-gradient(45deg, #3c7fd4 0%, #24ccfa 100%);
-  padding-bottom: 210px;
+  padding-bottom: 85px;
 }
 
 .second_sectoin h2 {
@@ -346,12 +346,88 @@ html {
 
 .second_sectoin .second_sectoin_container {
   margin: 0 auto;
+  position: relative;
+}
+
+.second_sectoin .second_sectoin_container .slick-track {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+.second_sectoin .second_sectoin_container .slick-list {
+  overflow: hidden;
+}
+
+.second_sectoin .second_sectoin_container .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -60px 0 0;
+  z-index: 1;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.second_sectoin .second_sectoin_container .slick-arrow:active,
+.second_sectoin .second_sectoin_container .slick-arrow:focus {
+  outline: none;
+}
+
+.second_sectoin .second_sectoin_container .slick-arrow.slick-prev {
+  left: -101px;
+  background: url(../img/icons/arrow_l.png) 0 0/100% no-repeat;
+}
+
+.second_sectoin .second_sectoin_container .slick-arrow.slick-next {
+  right: -81px;
+  background: url(../img/icons/arrow_r.png) 0 0/100% no-repeat;
+}
+
+.second_sectoin .second_sectoin_container .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.second_sectoin .second_sectoin_container .slick-dots li {
+  margin: 60px 40px 0 0;
+}
+
+.second_sectoin .second_sectoin_container .slick-dots li.slick-active {
+  font-size: 0;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.second_sectoin .second_sectoin_container .slick-dots li.slick-active:active,
+.second_sectoin .second_sectoin_container .slick-dots li.slick-active:focus {
+  outline: 0;
+}
+
+.second_sectoin .second_sectoin_container .slick-dots li button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+}
+
 .second_sectoin .slider_card {
+  width: 370px;
+  height: 518px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,7 +440,7 @@ html {
           justify-content: space-between;
   text-align: left;
   background-color: #fff;
-  margin-right: 30px;
+  margin: 0 30px 0 0;
   padding-bottom: 42px;
 }
 
@@ -390,6 +466,10 @@ html {
   font-size: 14px;
   color: #55b7ff;
   line-height: 2.5;
+}
+
+.second_sectoin .slider_card img {
+  width: 100%;
 }
 
 .second_sectoin .slider_card h3 {

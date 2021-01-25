@@ -24,7 +24,10 @@
     max-width: 1600px;
 
     .second_sectoin_container {
-      width: 73%;
+      width: 80%;
+      .slick-track {
+        width: 100%;
+      }
     }
   }
 }

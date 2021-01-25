@@ -19,7 +19,10 @@
     max-width: 1600px;
   }
   .second_sectoin .second_sectoin_container {
-    width: 73%;
+    width: 80%;
+  }
+  .second_sectoin .second_sectoin_container .slick-track {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=media_queries.css.map */
