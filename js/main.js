@@ -1,18 +1,5 @@
 /*set slider*/
 
-/*$(document).ready(function () {
-  $('.second_sectoin_container').slick({
-    arrows: true,
-    dots: true,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear'
-    slidesToShow: 3,
-    slidesToScroll: 3
-  });
-});*/
-
 $('.second_sectoin_container').slick({
   dots: true,
   arrows: true,
@@ -22,7 +9,7 @@ $('.second_sectoin_container').slick({
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 1600,
+      breakpoint: 1200,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -44,8 +31,5 @@ $('.second_sectoin_container').slick({
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
 });
