@@ -69,6 +69,9 @@ html {
   text-align: center;
   padding: 52px 0;
   background: url(../img/bgnd/header_bg.png) no-repeat, linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 .header .container .nav_container {
@@ -319,6 +322,9 @@ html {
           flex-direction: column;
   text-align: center;
   background: url(../img/bgnd/section3_bg.png) no-repeat, linear-gradient(45deg, #3c7fd4 0%, #24ccfa 100%);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
   padding-bottom: 85px;
 }
 
@@ -500,7 +506,7 @@ html {
   text-align: center;
 }
 
-.third_cection_container {
+.third_cection .third_cection_container {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -512,7 +518,7 @@ html {
       grid-template-areas: "title title title title" "big_photo big_photo small_1 small_2" "big_photo big_photo small_3 small_4" "bottom bottom bottom bottom";
 }
 
-.title {
+.third_cection .title {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
@@ -530,7 +536,7 @@ html {
   text-align: center;
 }
 
-h2 {
+.third_cection h2 {
   font-family: "Gotham Medium";
   font-size: 44px;
   color: #2c4058;
@@ -538,7 +544,7 @@ h2 {
   position: relative;
 }
 
-h2::before {
+.third_cection h2::before {
   position: absolute;
   content: "";
   display: block;
@@ -551,7 +557,7 @@ h2::before {
           transform: translate(-50% -50%);
 }
 
-.bottom {
+.third_cection .bottom {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
@@ -571,7 +577,7 @@ h2::before {
           align-items: center;
 }
 
-.big_photo {
+.third_cection .big_photo {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
@@ -580,55 +586,55 @@ h2::before {
   position: relative;
 }
 
-.big_photo img {
+.third_cection .big_photo img {
   width: 100%;
 }
 
-.small_1 {
+.third_cection .small_1 {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: small_1;
   position: relative;
 }
 
-.small_1 img {
+.third_cection .small_1 img {
   width: 100%;
 }
 
-.small_2 {
+.third_cection .small_2 {
   -ms-grid-row: 2;
   -ms-grid-column: 4;
   grid-area: small_2;
   position: relative;
 }
 
-.small_2 img {
+.third_cection .small_2 img {
   width: 100%;
 }
 
-.small_3 {
+.third_cection .small_3 {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: small_3;
   position: relative;
 }
 
-.small_3 img {
+.third_cection .small_3 img {
   width: 100%;
 }
 
-.small_4 {
+.third_cection .small_4 {
   -ms-grid-row: 3;
   -ms-grid-column: 4;
   grid-area: small_4;
   position: relative;
 }
 
-.small_4 img {
+.third_cection .small_4 img {
   width: 100%;
 }
 
-.big_photo::before {
+.third_cection .big_photo::before {
   position: absolute;
   content: "";
   display: block;
