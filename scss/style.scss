@@ -443,6 +443,7 @@ html {
     "big_photo big_photo small_3 small_4"
     "bottom bottom bottom bottom";
 }
+
 .title {
   grid-area: title;
   display: flex;
@@ -482,27 +483,46 @@ h2::before {
 .big_photo {
   grid-area: big_photo;
   position: relative;
+
+  img {
+    width: 100%;
+  }
 }
 
 .small_1 {
   grid-area: small_1;
   position: relative;
+
+  img {
+    width: 100%;
+  }
 }
+
 .small_2 {
   grid-area: small_2;
   position: relative;
+
+  img {
+    width: 100%;
+  }
 }
+
 .small_3 {
   grid-area: small_3;
   position: relative;
+
+  img {
+    width: 100%;
+  }
 }
+
 .small_4 {
   grid-area: small_4;
   position: relative;
-}
 
-img {
-  width: 100%;
+  img {
+    width: 100%;
+  }
 }
 
 .big_photo::before {
@@ -517,4 +537,3 @@ img {
   transform: translate(-50% -50%);
   z-index: 1;
 }
-

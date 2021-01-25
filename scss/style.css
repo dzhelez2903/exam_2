@@ -580,11 +580,19 @@ h2::before {
   position: relative;
 }
 
+.big_photo img {
+  width: 100%;
+}
+
 .small_1 {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: small_1;
   position: relative;
+}
+
+.small_1 img {
+  width: 100%;
 }
 
 .small_2 {
@@ -594,11 +602,19 @@ h2::before {
   position: relative;
 }
 
+.small_2 img {
+  width: 100%;
+}
+
 .small_3 {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: small_3;
   position: relative;
+}
+
+.small_3 img {
+  width: 100%;
 }
 
 .small_4 {
@@ -608,7 +624,7 @@ h2::before {
   position: relative;
 }
 
-img {
+.small_4 img {
   width: 100%;
 }
 
