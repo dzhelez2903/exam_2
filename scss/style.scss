@@ -558,12 +558,10 @@ html {
         rgba(36, 204, 250, 0.7) 100%);
     width: 100%;
     height: 100%;
-    z-index: -1;
-    animation: cubic-bezier(0.6, -0.28, 0.735, 0.045);
-    transition: 1s;
-  }
+    opacity: 0;
+    transition-timing-function: ease-in-out;
 
   .link_img:hover::before {
-    z-index: 0;
+    opacity: 1;
   }
 }
