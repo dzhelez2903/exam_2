@@ -164,8 +164,8 @@ html {
   .first_sectoin_container {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 46.15% 7.7% 46.15%;
-    grid-template-rows: 470px 470px;
+    grid-template-columns: auto 7.7% auto;
+    grid-template-rows: auto auto;
     gap: 210px 0px;
     grid-template-areas:
       "first-img first-img first_text"
@@ -553,15 +553,142 @@ html {
   .link_img::before {
     position: absolute;
     content: "";
-    background: linear-gradient(45deg,
-        rgba(60, 126, 212, 0.7) 0%,
-        rgba(36, 204, 250, 0.7) 100%);
+    background: linear-gradient(
+      45deg,
+      rgba(60, 126, 212, 0.7) 0%,
+      rgba(36, 204, 250, 0.7) 100%
+    );
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition-timing-function: ease-in-out;
+    transition: 2s;
+  }
 
   .link_img:hover::before {
     opacity: 1;
+  }
+}
+
+/*fourth_section_style*/
+
+.fourth_section {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: url(../img/bgnd/Map.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 700px;
+
+  .fourth_section_contacts {
+    /*position: absolute;
+    transform: translate(50% 50%);
+    left: 50%;
+    top: 50%;*/
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 60px 42.21% 42.21% 60px;
+    grid-template-rows: 165px auto auto 80px;
+    gap: 0px 0px;
+    grid-template-areas:
+      ".title title."
+      ".contacts inputs."
+      ".bottom bottom.";
+    background: url(../img/bgnd/footer_bg_form.png) no-repeat;
+    box-shadow: 0px -4px 30px 0px rgba(133, 133, 133, 0.2);
+  }
+
+  .title {
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      margin-top: 50px;
+      position: relative;
+      font-family: "Gotham Medium";
+      font-size: 44px;
+      color: #2c4058;
+      text-transform: uppercase;
+    }
+
+    h2:before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 100px;
+      height: 1px;
+      background-color: #2c4058;
+      left: 42.7%;
+      top: -80%;
+    }
+  }
+
+  .contacts {
+    grid-area: contacts;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+
+    p {
+      font-family: "Font Awesome";
+      font-size: 18px;
+      color: #2c4058;
+      display: inline-block;
+    }
+
+    span {
+      color: #7e5aff;
+    }
+  }
+
+  .inputs {
+    grid-area: inputs;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .btn {
+      margin-left: 170px;
+    }
+
+    input {
+      margin-bottom: 30px;
+      height: 40px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #d5d9de;
+    }
+
+    input::placeholder {
+      font-family: "Gotham Book";
+      font-size: 18px;
+      color: #4b5562;
+    }
+
+    input:focus {
+      border-bottom: 1px solid #2c4058;
+    }
+
+    input:focus::-webkit-input-placeholder {
+      color: #2c4058;
+    }
+
+    input:focus::-moz-placeholder {
+      color: #2c4058;
+    }
+
+    input:focus:-moz-placeholder {
+      color: #2c4058;
+    }
+
+    input:focus:-ms-input-placeholder {
+      color: #2c4058;
+    }
   }
 }

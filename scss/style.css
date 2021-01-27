@@ -184,10 +184,10 @@ html {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 46.15% 7.7% 46.15%;
-      grid-template-columns: 46.15% 7.7% 46.15%;
-  -ms-grid-rows: 470px 470px;
-      grid-template-rows: 470px 470px;
+  -ms-grid-columns: auto 7.7% auto;
+      grid-template-columns: auto 7.7% auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
   gap: 210px 0px;
       grid-template-areas: "first-img first-img first_text" "second_text second-img second-img";
 }
@@ -676,5 +676,176 @@ html {
 
 .third_cection .link_img:hover::before {
   opacity: 1;
+}
+
+/*fourth_section_style*/
+.fourth_section {
+  position: relative;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background: url(../img/bgnd/Map.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 700px;
+}
+
+.fourth_section .fourth_section_contacts {
+  /*position: absolute;
+    transform: translate(50% 50%);
+    left: 50%;
+    top: 50%;*/
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60px 42.21% 42.21% 60px;
+      grid-template-columns: 60px 42.21% 42.21% 60px;
+  -ms-grid-rows: 165px auto auto 80px;
+      grid-template-rows: 165px auto auto 80px;
+  gap: 0px 0px;
+      grid-template-areas: ".title title." ".contacts inputs." ".bottom bottom.";
+  background: url(../img/bgnd/footer_bg_form.png) no-repeat;
+  -webkit-box-shadow: 0px -4px 30px 0px rgba(133, 133, 133, 0.2);
+          box-shadow: 0px -4px 30px 0px rgba(133, 133, 133, 0.2);
+}
+
+.fourth_section .title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: title;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fourth_section .title h2 {
+  margin-top: 50px;
+  position: relative;
+  font-family: "Gotham Medium";
+  font-size: 44px;
+  color: #2c4058;
+  text-transform: uppercase;
+}
+
+.fourth_section .title h2:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: #2c4058;
+  left: 42.7%;
+  top: -80%;
+}
+
+.fourth_section .contacts {
+  grid-area: contacts;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+}
+
+.fourth_section .contacts p {
+  font-family: "Font Awesome";
+  font-size: 18px;
+  color: #2c4058;
+  display: inline-block;
+}
+
+.fourth_section .contacts span {
+  color: #7e5aff;
+}
+
+.fourth_section .inputs {
+  grid-area: inputs;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fourth_section .inputs .btn {
+  margin-left: 170px;
+}
+
+.fourth_section .inputs input {
+  margin-bottom: 30px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #d5d9de;
+}
+
+.fourth_section .inputs input::-webkit-input-placeholder {
+  font-family: "Gotham Book";
+  font-size: 18px;
+  color: #4b5562;
+}
+
+.fourth_section .inputs input:-ms-input-placeholder {
+  font-family: "Gotham Book";
+  font-size: 18px;
+  color: #4b5562;
+}
+
+.fourth_section .inputs input::-ms-input-placeholder {
+  font-family: "Gotham Book";
+  font-size: 18px;
+  color: #4b5562;
+}
+
+.fourth_section .inputs input::placeholder {
+  font-family: "Gotham Book";
+  font-size: 18px;
+  color: #4b5562;
+}
+
+.fourth_section .inputs input:focus {
+  border-bottom: 1px solid #2c4058;
+}
+
+.fourth_section .inputs input:focus::-webkit-input-placeholder {
+  color: #2c4058;
+}
+
+.fourth_section .inputs input:focus::-moz-placeholder {
+  color: #2c4058;
+}
+
+.fourth_section .inputs input:focus:-moz-placeholder {
+  color: #2c4058;
+}
+
+.fourth_section .inputs input:focus:-ms-input-placeholder {
+  color: #2c4058;
 }
 /*# sourceMappingURL=style.css.map */
