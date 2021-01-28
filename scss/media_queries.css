@@ -35,5 +35,12 @@
   .fourth_section .fourth_section_contacts {
     width: 48.13%;
   }
+  /*footer_style*/
+  .footer {
+    max-width: 1600px;
+  }
+  .footer_container {
+    width: 48.13%;
+  }
 }
 /*# sourceMappingURL=media_queries.css.map */
