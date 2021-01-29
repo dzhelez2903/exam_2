@@ -604,6 +604,7 @@ html {
 
 .third_cection .big_photo img {
   width: 100%;
+  height: auto;
 }
 
 .third_cection .big_photo::before {
