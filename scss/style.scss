@@ -1,3 +1,15 @@
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: "Gotham Bold";
   src: url(../fonts/gothamBold.woff);
@@ -32,6 +44,7 @@ html {
 
 .btn {
   max-width: 195px;
+  min-width: 140px;
   font-family: "Gotham Book";
   font-size: 14px;
   color: #2c4058;
@@ -52,65 +65,66 @@ html {
   margin: 0 10px 0;
 }
 
-
 /*header styls*/
 
 .header {
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
+  background: url(../img/bgnd/header_bg.png) no-repeat,
+      linear-gradient(45deg, rgb(85, 183, 255) 0%, rgb(126, 90, 255) 100%);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+  .nav_container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 52px 0 0;
+
+    .menu {
+      font-size: 14px;
+      font-family: "Gotham Book";
+      color: #fff;
+      text-transform: uppercase;
+      position: relative;
+      margin-right: 90px;
+    }
+
+    .menu::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      top: 2px;
+      left: -15px;
+      transition: 0.2s;
+    }
+
+    .menu:hover:before {
+      background-color: #fff;
+    }
+
+    .nav_menu {
+      margin-left: 60px;
+    }
+
+    li {
+      display: inline-block;
+    }
+  }
 
   .container {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 52px 0;
-    background: url(../img/bgnd/header_bg.png) no-repeat,
-      linear-gradient(45deg, rgb(85, 183, 255) 0%, rgb(126, 90, 255) 100%);
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-
-    .nav_container {
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .menu {
-        font-size: 14px;
-        font-family: "Gotham Book";
-        color: #fff;
-        text-transform: uppercase;
-        position: relative;
-        margin-right: 90px;
-      }
-
-      .menu::before {
-        position: absolute;
-        content: "";
-        display: block;
-        width: 8px;
-        height: 8px;
-        border: 1px solid #fff;
-        border-radius: 50%;
-        top: 2px;
-        left: -15px;
-        transition: 0.2s;
-      }
-
-      .menu:hover:before {
-        background-color: #fff;
-      }
-
-      .nav_menu {
-        margin-left: 60px;
-      }
-
-      li {
-        display: inline-block;
-      }
-    }
+    padding-bottom: 42px;
 
     h1 {
       font-size: 80px;
@@ -165,7 +179,7 @@ html {
   .first_sectoin_container {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: auto 7.7% auto;
+    grid-template-columns: 46.15% 7.7% 46.15%;
     grid-template-rows: auto auto;
     gap: 210px 0px;
     grid-template-areas:
@@ -177,22 +191,37 @@ html {
     grid-area: first-img;
     display: flex;
     position: relative;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
+    background: url(../img/images/first_section_first.png) no-repeat;
   }
 
-  .first-img::before {
+  .first-img::after {
     position: absolute;
     content: "";
-    display: block;
+    /*display: block;*/
     width: 92.86%;
     height: 100%;
     background-color: #55b7ff;
     top: -15%;
     left: -34.5%;
+    z-index: -1;
+  }
+
+  .second-img {
+    grid-area: second-img;
+    display: flex;
+    position: relative;
+    background: url(../img/images/first_section_second.png) no-repeat;
+  }
+
+  .second-img::after {
+    position: absolute;
+    content: "";
+    /*display: block;*/
+    width: 92.86%;
+    height: 100%;
+    background-color: #7e5aff;
+    top: -15%;
+    right: -34.5%;
     z-index: -1;
   }
 
@@ -211,29 +240,6 @@ html {
     text-align: left;
     padding-top: 60px;
     padding: 60px 70px 0 0;
-  }
-
-  .second-img {
-    grid-area: second-img;
-    display: flex;
-    position: relative;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-
-  .second-img::after {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 92.86%;
-    height: 100%;
-    background-color: #7e5aff;
-    top: -15%;
-    right: -34.5%;
-    z-index: -1;
   }
 
   .first_paragraph {
@@ -310,6 +316,7 @@ html {
     .slick-track {
       margin: 0 auto;
       display: flex;
+      width: 100%;
     }
 
     .slick-list {
@@ -384,8 +391,8 @@ html {
       justify-content: space-between;
       text-align: left;
       background-color: #fff;
-      margin: 0 30px 0 0;
-      padding-bottom: 42px;
+      margin: 0 15px 0 15px;
+      padding:0 0 20px 0;
 
       .face {
         width: 60px;
@@ -444,7 +451,7 @@ html {
     margin: 0 auto;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: 300px 214px 214px 240px;
+    grid-template-rows: 300px auto auto 240px;
     gap: 10px 10px;
     grid-template-areas:
       "title title title title"
@@ -554,9 +561,11 @@ html {
   .link_img::before {
     position: absolute;
     content: "";
-    background: linear-gradient(45deg,
-        rgba(60, 126, 212, 0.7) 0%,
-        rgba(36, 204, 250, 0.7) 100%);
+    background: linear-gradient(
+      45deg,
+      rgba(60, 126, 212, 0.7) 0%,
+      rgba(36, 204, 250, 0.7) 100%
+    );
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -585,11 +594,10 @@ html {
   .fourth_section_contacts {
     position: absolute;
     transform: translate(50% 50%);
-    left: 26%;
     top: 57%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 60px 42.21% 42.21% 60px;
+    grid-template-columns: 7.8% 42.2% 42.2% 7.8%;
     grid-template-rows: 165px auto auto 80px;
     gap: 0px 0px;
     grid-template-areas:
@@ -597,6 +605,7 @@ html {
       ".contacts inputs."
       ".bottom bottom.";
     background: url(../img/bgnd/footer_bg_form.png) no-repeat;
+    background-size: cover;
     box-shadow: 0px -4px 30px 0px rgba(133, 133, 133, 0.2);
 
     .title {
@@ -604,7 +613,7 @@ html {
       display: flex;
       flex-direction: column;
       justify-content: center;
-  
+
       h2 {
         margin-top: 50px;
         position: relative;
@@ -613,7 +622,7 @@ html {
         color: #2c4058;
         text-transform: uppercase;
       }
-  
+
       h2:before {
         position: absolute;
         content: "";
@@ -625,66 +634,64 @@ html {
         top: -80%;
       }
     }
-  
+
     .contacts {
       grid-area: contacts;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       text-align: left;
-  
+
       p {
         font-family: "Font Awesome";
         font-size: 18px;
         color: #2c4058;
         display: inline-block;
       }
-  
+
       span {
         color: #7e5aff;
       }
     }
-  
+
     .inputs {
       grid-area: inputs;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-  
-      .btn {
-        margin-left: 170px;
-      }
-  
+      align-items: flex-end;
+
       input {
+        width: 100%;
         margin-bottom: 30px;
         height: 40px;
         background: transparent;
         border: none;
         border-bottom: 1px solid #d5d9de;
       }
-  
+
       input::placeholder {
         font-family: "Gotham Book";
         font-size: 18px;
         color: #4b5562;
       }
-  
+
       input:focus {
         border-bottom: 1px solid #2c4058;
       }
-  
+
       input:focus::-webkit-input-placeholder {
         color: #2c4058;
       }
-  
+
       input:focus::-moz-placeholder {
         color: #2c4058;
       }
-  
+
       input:focus:-moz-placeholder {
         color: #2c4058;
       }
-  
+
       input:focus:-ms-input-placeholder {
         color: #2c4058;
       }
@@ -699,7 +706,8 @@ html {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background: url(../img/bgnd/footer_bg.png) no-repeat, linear-gradient( 45deg, rgb(85,183,255) 0%, rgb(126,90,255) 100%);
+  background: url(../img/bgnd/footer_bg.png) no-repeat,
+    linear-gradient(45deg, rgb(85, 183, 255) 0%, rgb(126, 90, 255) 100%);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -707,16 +715,18 @@ html {
 
   .footer_container {
     margin: 0 auto;
+
     .top {
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
-  
+
       li {
         display: inline-block;
       }
     }
+
     .bottom {
       margin: 0 auto;
       display: flex;
@@ -725,11 +735,12 @@ html {
       font-size: 14px;
       color: #fff;
       margin-top: 55px;
-  
+
       .first_paragraph {
         font-family: "Gotham Book";
         position: relative;
       }
+
       .first_paragraph::after {
         position: absolute;
         content: "";
@@ -740,13 +751,11 @@ html {
         left: 110%;
         top: -20%;
       }
+
       .second_paragraph {
-        font-family: "Gotham Book";
+        font-family: "FontAwesome";
         margin-left: 40px;
       }
     }
   }
 }
-
-
-

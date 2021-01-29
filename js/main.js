@@ -9,26 +9,22 @@ $('.second_sectoin_container').slick({
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 1200,
+      breakpoint: 1354,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
+        arrows: false,
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 991,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        arrows: false,
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 767,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
       }
     }
   ]
