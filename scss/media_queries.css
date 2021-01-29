@@ -242,7 +242,6 @@
   .fourth_section {
     max-width: 991px;
     min-width: 768px;
-    /*footer_style*/
   }
   .fourth_section .fourth_section_contacts {
     width: 80%;
@@ -254,16 +253,17 @@
     position: absolute;
     left: 40%;
   }
-  .fourth_section .footer {
+  /*footer_style*/
+  .footer {
     max-width: 991px;
     min-width: 768px;
   }
-  .fourth_section .footer_container {
+  .footer_container {
     width: 80%;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1354px) {
+@media (min-width: 992px) and (max-width: 1354px) {
   /*header styls*/
   .header {
     max-width: 1354px;
@@ -327,7 +327,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) and (min-width: 1355px) and (max-width: 1499px) {
+@media (min-width: 1355px) and (max-width: 1499px) {
   /*header styls*/
   .header {
     max-width: 1499px;
@@ -384,7 +384,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) and (min-width: 1500px) {
+@media (min-width: 1600px) {
   /*header styls*/
   .header {
     max-width: 1600px;

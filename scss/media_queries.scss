@@ -298,9 +298,9 @@
           position: absolute;
           left: 40%;
         }
+      }
     }
   }
-
   /*footer_style*/
 
   .footer {
@@ -470,7 +470,7 @@
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1600px) {
   /*header styls*/
 
   .header {
@@ -494,6 +494,8 @@
       width: 73%;
     }
   }
+
+
 
   /*second_section_styls*/
 
@@ -538,5 +540,4 @@
   .footer_container {
     width: 48.13%;
   }
-}
 }

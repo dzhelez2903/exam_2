@@ -197,7 +197,7 @@ html {
   .first-img::after {
     position: absolute;
     content: "";
-    /*display: block;*/
+    display: block;
     width: 92.86%;
     height: 100%;
     background-color: #55b7ff;
@@ -216,7 +216,7 @@ html {
   .second-img::after {
     position: absolute;
     content: "";
-    /*display: block;*/
+    display: block;
     width: 92.86%;
     height: 100%;
     background-color: #7e5aff;
