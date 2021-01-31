@@ -1,6 +1,6 @@
 /*set slider*/
 
-$('.second_sectoin_container').slick({
+$(".second_sectoin_container").slick({
   dots: true,
   arrows: true,
   infinite: true,
@@ -13,24 +13,24 @@ $('.second_sectoin_container').slick({
       settings: {
         slidesToShow: 2,
         arrows: false,
-      }
+      },
     },
     {
       breakpoint: 768,
       settings: {
         slidesToShow: 1,
         arrows: false,
-      }
+      },
     },
     {
-      breakpoint:480,
+      breakpoint: 480,
       settings: {
         slidesToShow: 1,
         arrows: false,
         dots: false,
-      }
-    }
-  ]
+      },
+    },
+  ],
 });
 
 /*set mobile menu*/
@@ -64,13 +64,3 @@ function burgerMenu(selector) {
 }
 
 burgerMenu(".header__mobile_menu");
-
-/*lazy scroll*/
-
-$('a[href^="#"]').click(function () {
-  $('html, body').animate({
-      scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
-  }, 500);
-
-  return false;
-});
