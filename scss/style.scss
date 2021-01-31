@@ -267,9 +267,9 @@ html {
   }
 }
 
-/*first_sectoin style*/
+/*first_section style*/
 
-.first_sectoin {
+.first_section {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -297,7 +297,7 @@ html {
     transform: translate(-50% -50%);
   }
 
-  .first_sectoin_container {
+  .first_section_container {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 46.15% 7.7% 46.15%;
@@ -395,9 +395,9 @@ html {
   }
 }
 
-/*second_sectoin style*/
+/*second_section style*/
 
-.second_sectoin {
+.second_section {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -430,13 +430,14 @@ html {
     transform: translate(-50% -50%);
   }
 
-  .second_sectoin_container {
+  .second_section_container {
     margin: 0 auto;
     position: relative;
 
     .slick-track {
       margin: 0 auto;
       display: flex;
+      flex-direction: row;
       width: 100%;
     }
 

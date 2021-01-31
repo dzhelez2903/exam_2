@@ -1,6 +1,6 @@
 /*set slider*/
 
-$(".second_sectoin_container").slick({
+$(".second_section_container").slick({
   dots: true,
   arrows: true,
   infinite: true,
