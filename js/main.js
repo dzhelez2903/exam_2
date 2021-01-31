@@ -64,3 +64,4 @@ function burgerMenu(selector) {
 }
 
 burgerMenu(".header__mobile_menu");
+
