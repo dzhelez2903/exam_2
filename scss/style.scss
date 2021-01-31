@@ -506,7 +506,6 @@ html {
 
     .slider_card {
       width: 33%;
-      /*height: 518px;*/
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -624,7 +623,6 @@ html {
 
     img {
       width: 100%;
-      height: auto;
     }
   }
 
@@ -690,7 +688,7 @@ html {
       rgba(36, 204, 250, 0.7) 100%
     );
     width: 100%;
-    height: auto;
+    height: 100%;
     opacity: 0;
     transition: 2s;
   }

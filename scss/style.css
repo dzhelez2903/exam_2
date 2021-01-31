@@ -576,7 +576,6 @@ html {
 
 .second_sectoin .second_sectoin_container .slider_card {
   width: 33%;
-  /*height: 518px;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -735,7 +734,6 @@ html {
 
 .third_cection .big_photo img {
   width: 100%;
-  height: auto;
 }
 
 .third_cection .big_photo::before {
@@ -812,7 +810,7 @@ html {
   content: "";
   background: linear-gradient(45deg, rgba(60, 126, 212, 0.7) 0%, rgba(36, 204, 250, 0.7) 100%);
   width: 100%;
-  height: auto;
+  height: 100%;
   opacity: 0;
   -webkit-transition: 2s;
   transition: 2s;
