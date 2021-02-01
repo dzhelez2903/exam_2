@@ -483,8 +483,6 @@
   }
   .fourth_section .fourth_section_contacts {
     width: 80%;
-  }
-  .fourth_section .fourth_section_contacts {
     left: 10%;
   }
   .fourth_section .fourth_section_contacts .title h2:before {
@@ -554,8 +552,6 @@
   }
   .fourth_section .fourth_section_contacts {
     width: 70%;
-  }
-  .fourth_section .fourth_section_contacts {
     left: 15%;
   }
   /*footer_style*/
@@ -614,8 +610,6 @@
   }
   .fourth_section .fourth_section_contacts {
     width: 55.13%;
-  }
-  .fourth_section .fourth_section_contacts {
     left: 22.5%;
   }
   /*footer_style*/
@@ -631,7 +625,8 @@
 @media (min-width: 1500px) {
   /*header styls*/
   .header {
-    max-width: 1600px;
+    min-width: 1500px;
+    width: 100%;
   }
   .header .nav_container {
     width: 73%;
@@ -644,41 +639,44 @@
   }
   /*first_section_styls*/
   .first_section {
-    max-width: 1600px;
+    min-width: 1500px;
+    width: 100%;
   }
   .first_section .first_section_container {
-    width: 73%;
+    width: 50%;
   }
   /*second_section_styls*/
   .second_section {
-    max-width: 1600px;
+    min-width: 1500px;
+    width: 100%;
   }
   .second_section .second_section_container {
-    width: 73%;
+    width: 50%;
   }
   /*third_section_styls*/
   .third_cection {
-    max-width: 1600px;
+    min-width: 1500px;
+    width: 100%;
   }
   .third_cection .third_cection_container {
-    width: 73%;
+    width: 50%;
   }
   /*fourth_section_style*/
   .fourth_section {
-    max-width: 1600px;
+    min-width: 1500px;
+    width: 100%;
   }
   .fourth_section .fourth_section_contacts {
-    width: 48.13%;
-  }
-  .fourth_section .fourth_section_contacts {
-    left: 26%;
+    width: 33%;
+    left: 33.5%;
   }
   /*footer_style*/
   .footer {
-    max-width: 1600px;
+    min-width: 1500px;
+    width: 100%;
   }
   .footer_container {
-    width: 48.13%;
+    width: 33%;
   }
 }
 /*# sourceMappingURL=media_queries.css.map */

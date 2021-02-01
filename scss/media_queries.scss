@@ -558,9 +558,6 @@
 
     .fourth_section_contacts {
       width: 80%;
-    }
-
-    .fourth_section_contacts {
       left: 10%;
 
       .title {
@@ -650,9 +647,6 @@
 
     .fourth_section_contacts {
       width: 70%;
-    }
-
-    .fourth_section_contacts {
       left: 15%;
     }
   }
@@ -730,9 +724,6 @@
 
     .fourth_section_contacts {
       width: 55.13%;
-    }
-
-    .fourth_section_contacts {
       left: 22.5%;
     }
   }
@@ -753,7 +744,8 @@
   /*header styls*/
 
   .header {
-    max-width: 1600px;
+    min-width: 1500px;
+    width: 100%;
     
     .nav_container {
       width: 73%;
@@ -771,54 +763,56 @@
   /*first_section_styls*/
 
   .first_section {
-    max-width: 1600px;
+    min-width: 1500px;
+    width: 100%;
 
     .first_section_container {
-      width: 73%;
+      width: 50%;
     }
   }
 
   /*second_section_styls*/
 
   .second_section {
-    max-width: 1600px;
+    min-width: 1500px;
+    width: 100%;
 
     .second_section_container {
-      width: 73%;
+      width: 50%;
     }
   }
 
   /*third_section_styls*/
 
   .third_cection {
-    max-width: 1600px;
+    min-width: 1500px;
+    width: 100%;
 
     .third_cection_container {
-      width: 73%;
+      width: 50%;
     }
   }
 
   /*fourth_section_style*/
 
   .fourth_section {
-    max-width: 1600px;
+    min-width: 1500px;
+    width: 100%;
 
     .fourth_section_contacts {
-      width: 48.13%;
-    }
-
-    .fourth_section_contacts {
-      left: 26%;
+      width: 33%;
+      left: 33.5%;
     }
   }
 
   /*footer_style*/
 
   .footer {
-    max-width: 1600px;
+    min-width: 1500px;
+    width: 100%;
   }
 
   .footer_container {
-    width: 48.13%;
+    width: 33%;
   }
 }
