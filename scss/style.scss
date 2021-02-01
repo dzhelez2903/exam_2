@@ -538,7 +538,7 @@ html {
       }
 
       img {
-        width: 100%;
+        max-width: 100%;
       }
 
       h3 {
@@ -623,7 +623,7 @@ html {
     display: flex;
 
     img {
-      width: 100%;
+      max-width: 100%;
     }
   }
 
@@ -644,7 +644,7 @@ html {
     display: flex;
 
     img {
-      width: 100%;
+      max-width: 100%;
     }
   }
 
@@ -653,7 +653,7 @@ html {
     display: flex;
 
     img {
-      width: 100%;
+      max-width: 100%;
     }
   }
 
@@ -662,7 +662,7 @@ html {
     display: flex;
 
     img {
-      width: 100%;
+      max-width: 100%;
     }
   }
 
@@ -671,8 +671,7 @@ html {
     display: flex;
 
     img {
-      width: 100%;
-      height: auto;
+      max-width: 100%;
     }
   }
 
@@ -763,7 +762,7 @@ html {
       text-align: left;
 
       p {
-        font-family: "Font Awesome";
+        font-family: "Gotham Book";
         font-size: 18px;
         color: #2c4058;
         display: inline-block;

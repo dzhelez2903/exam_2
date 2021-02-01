@@ -621,7 +621,7 @@ html {
 }
 
 .second_section .second_section_container .slider_card img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .second_section .second_section_container .slider_card h3 {
@@ -737,7 +737,7 @@ html {
 }
 
 .third_cection .big_photo img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .third_cection .big_photo::before {
@@ -762,7 +762,7 @@ html {
 }
 
 .third_cection .small_1 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .third_cection .small_2 {
@@ -775,7 +775,7 @@ html {
 }
 
 .third_cection .small_2 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .third_cection .small_3 {
@@ -788,7 +788,7 @@ html {
 }
 
 .third_cection .small_3 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .third_cection .small_4 {
@@ -801,8 +801,7 @@ html {
 }
 
 .third_cection .small_4 img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
 }
 
 .third_cection .link_img {
@@ -916,7 +915,7 @@ html {
 }
 
 .fourth_section .fourth_section_contacts .contacts p {
-  font-family: "Font Awesome";
+  font-family: "Gotham Book";
   font-size: 18px;
   color: #2c4058;
   display: inline-block;
