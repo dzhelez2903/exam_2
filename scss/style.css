@@ -315,7 +315,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   top: 25%;
-  left: 81.5%;
+  right: 40px;
   z-index: 1;
 }
 
@@ -707,8 +707,8 @@ html {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto auto;
-      grid-template-columns: auto auto auto auto;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
   -ms-grid-rows: 300px auto auto 240px;
       grid-template-rows: 300px auto auto 240px;
   gap: 10px 10px;

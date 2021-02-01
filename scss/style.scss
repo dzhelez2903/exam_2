@@ -241,7 +241,6 @@ html {
       background-color: rgba(0, 0, 0, 0.1);
       cursor: pointer;
     }
-
   }
 
   .container {
@@ -278,7 +277,7 @@ html {
       justify-content: space-between;
       align-items: center;
       top: 25%;
-      left: 81.5%;
+      right: 40px;
       z-index: 1;
 
       .dot_menu {
@@ -611,7 +610,7 @@ html {
   .third_cection_container {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     grid-template-rows: 300px auto auto 240px;
     gap: 10px 10px;
     grid-template-areas:
