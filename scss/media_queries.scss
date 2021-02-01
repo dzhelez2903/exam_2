@@ -9,6 +9,10 @@
       width: 90%;
       flex-direction: column;
 
+      img {
+        max-width: 75%;
+      }
+
       .menu {
         display: none;
       }

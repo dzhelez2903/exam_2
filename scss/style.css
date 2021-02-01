@@ -83,6 +83,10 @@ html {
   background-attachment: fixed;
 }
 
+.header img {
+  max-width: 100%;
+}
+
 .header .nav_container {
   margin: 0 auto;
   display: -webkit-box;
