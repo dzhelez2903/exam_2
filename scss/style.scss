@@ -268,6 +268,41 @@ html {
       letter-spacing: 5px;
       margin: 15px 0 230px;
     }
+
+    .dot_nav_menu {
+      position: fixed;
+      width: 15px;
+      height: 210px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      top: 25%;
+      left: 90%;
+      z-index: 1;
+
+      .dot_menu {
+        font-size: 0;
+        position: relative;
+        margin-bottom: 40px;
+      }
+  
+      .dot_menu::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        border: 1.5px solid #2c4058;
+        border-radius: 50%;
+        top: -1px;
+        left: 0px;
+        transition: 0.2s;
+      }
+      .dot_menu:hover::before {
+        background-color: #2c4058;
+      }
+    }
   }
 }
 
