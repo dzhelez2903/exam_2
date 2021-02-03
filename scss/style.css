@@ -103,7 +103,7 @@ html {
 
 .header .nav_container .menu {
   display: inline-block;
-  height: 15px;
+  line-height: 15px;
   font-size: 14px;
   font-family: "Gotham Book";
   color: #fff;
