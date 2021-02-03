@@ -2,7 +2,7 @@ html {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth
 }
 
 body {
@@ -103,17 +103,18 @@ html {
     }
 
     .menu::before {
+      position: absolute;
       content: "";
-      display: inline-block;
+      display: block;
       width: 8px;
       height: 8px;
       border: 1px solid #fff;
       border-radius: 50%;
-      -webkit-transition: 0.2s;
+      top: 0;
+      bottom: 0;
+      left: -15px;
+      margin: auto;
       transition: 0.2s;
-      line-height: 14px;
-      vertical-align: middle;
-      margin: 6px;
     }
 
     .menu:hover:before {
@@ -127,6 +128,7 @@ html {
     li {
       display: inline-block;
     }
+
 
     .header__mobile_menu {
       position: absolute;
@@ -725,11 +727,9 @@ html {
   .link_img::before {
     position: absolute;
     content: "";
-    background: linear-gradient(
-      45deg,
-      rgba(60, 126, 212, 0.7) 0%,
-      rgba(36, 204, 250, 0.7) 100%
-    );
+    background: linear-gradient(45deg,
+        rgba(60, 126, 212, 0.7) 0%,
+        rgba(36, 204, 250, 0.7) 100%);
     width: 100%;
     height: 100%;
     opacity: 0;
