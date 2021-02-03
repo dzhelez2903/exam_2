@@ -115,19 +115,17 @@ html {
 }
 
 .header .nav_container .menu::before {
-  position: absolute;
   content: "";
-  display: block;
+  display: inline-block;
   width: 8px;
   height: 8px;
   border: 1px solid #fff;
   border-radius: 50%;
-  top: 0;
-  bottom: 0;
-  left: -15px;
-  margin: auto;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  line-height: 14px;
+  vertical-align: middle;
+  margin: 6px;
 }
 
 .header .nav_container .menu:hover:before {
