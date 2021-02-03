@@ -324,7 +324,7 @@ html {
     position: relative;
   }
 
-  h2::before {
+  a::before {
     position: absolute;
     content: "";
     display: block;

@@ -366,7 +366,7 @@ html {
   position: relative;
 }
 
-.first_section h2::before {
+.first_section a::before {
   position: absolute;
   content: "";
   display: block;
